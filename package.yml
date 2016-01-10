@@ -1,0 +1,41 @@
+name       : devscripts
+version    : 2.15.9
+release    : 1
+source     :
+    - http://ftp.debian.org/debian/pool/main/d/devscripts/devscripts_2.15.9.tar.xz : 409c7527ea91dda844688707b365485a9f5cc2e733e93f996fb597c64c78589d
+license    : GPL-2.0
+summary    : Scripts for Debian package maintainers
+description: |
+    Scripts for Debian package maintainers
+builddeps  :
+    - dpkg
+    - perl-uri
+    - libwww-perl
+    - perl-http-message
+    - perl-http-date
+    - perl-encode-locale
+    - perl-timedate
+    - perl-file-desktopentry
+    - docbook-xml
+    - po4a
+    - python-setuptools
+    - python3-setuptools
+    - pkgconfig(python-3.4)
+# You fat bastid..
+rundeps   :
+    - dpkg
+    - perl-uri
+    - libwww-perl
+    - perl-http-message
+    - perl-http-date
+    - perl-encode-locale
+    - perl-timedate
+    - perl-file-desktopentry
+    - python-setuptools
+    - python3-setuptools
+build      : |
+    # Inspired by Arch patch
+    %patch -p1 < $pkgfiles/0001-Fix-docbook-versions-paths.patch
+    make
+install    : |
+    %make_install
