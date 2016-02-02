@@ -1,8 +1,8 @@
 name       : devscripts
-version    : 2.15.9
-release    : 1
+version    : 2.15.10
+release    : 2
 source     :
-    - http://ftp.debian.org/debian/pool/main/d/devscripts/devscripts_2.15.9.tar.xz : 409c7527ea91dda844688707b365485a9f5cc2e733e93f996fb597c64c78589d
+    - http://ftp.debian.org/debian/pool/main/d/devscripts/devscripts_2.15.10.tar.xz : 8659779f03563aea6187f744b083cea2dfe637da2bb12ff52e38dd2e6f3762f9
 license    : GPL-2.0
 summary    : Scripts for Debian package maintainers
 description: |
@@ -20,7 +20,7 @@ builddeps  :
     - po4a
     - python-setuptools
     - python3-setuptools
-    - pkgconfig(python-3.4)
+    - pkgconfig(python-3.5)
 # You fat bastid..
 rundeps   :
     - dpkg
