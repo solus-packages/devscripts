@@ -1,6 +1,6 @@
 name       : devscripts
 version    : 2.15.10
-release    : 2
+release    : 3
 source     :
     - http://ftp.debian.org/debian/pool/main/d/devscripts/devscripts_2.15.10.tar.xz : 8659779f03563aea6187f744b083cea2dfe637da2bb12ff52e38dd2e6f3762f9
 license    : GPL-2.0
@@ -19,7 +19,6 @@ builddeps  :
     - docbook-xml
     - po4a
     - python-setuptools
-    - python3-setuptools
     - pkgconfig(python-3.5)
 # You fat bastid..
 rundeps   :
@@ -32,7 +31,6 @@ rundeps   :
     - perl-timedate
     - perl-file-desktopentry
     - python-setuptools
-    - python3-setuptools
 build      : |
     # Inspired by Arch patch
     %patch -p1 < $pkgfiles/0001-Fix-docbook-versions-paths.patch
