@@ -1,35 +1,36 @@
 name       : devscripts
-version    : 2.15.10
-release    : 3
+version    : 2.17.12
+release    : 4
 source     :
-    - http://ftp.debian.org/debian/pool/main/d/devscripts/devscripts_2.15.10.tar.xz : 8659779f03563aea6187f744b083cea2dfe637da2bb12ff52e38dd2e6f3762f9
+    - http://ftp.debian.org/debian/pool/main/d/devscripts/devscripts_2.17.12.tar.xz : 08286f97e467d1fc69dee3441da1421f4655eb407b8f95703b70662f73142af2
 license    : GPL-2.0
 summary    : Scripts for Debian package maintainers
 description: |
     Scripts for Debian package maintainers
 builddeps  :
-    - dpkg
-    - perl-uri
-    - libwww-perl
-    - perl-http-message
-    - perl-http-date
-    - perl-encode-locale
-    - perl-timedate
-    - perl-file-desktopentry
+    - pkgconfig(python3)
     - docbook-xml
+    - dpkg
+    - help2man
+    - libwww-perl
+    - perl-encode-locale
+    - perl-file-desktopentry
+    - perl-http-date
+    - perl-http-message
+    - perl-timedate
+    - perl-uri
     - po4a
     - python-setuptools
-    - pkgconfig(python-3.5)
 # You fat bastid..
-rundeps   :
+rundeps    :
     - dpkg
-    - perl-uri
     - libwww-perl
-    - perl-http-message
-    - perl-http-date
-    - perl-encode-locale
-    - perl-timedate
     - perl-file-desktopentry
+    - perl-encode-locale
+    - perl-http-date
+    - perl-http-message
+    - perl-timedate
+    - perl-uri
     - python-setuptools
 build      : |
     # Inspired by Arch patch

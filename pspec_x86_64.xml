@@ -2,8 +2,8 @@
     <Source>
         <Name>devscripts</Name>
         <Packager>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
         <License>GPL-2.0</License>
         <Summary xml:lang="en">Scripts for Debian package maintainers</Summary>
@@ -16,35 +16,76 @@
         <Summary xml:lang="en">Scripts for Debian package maintainers</Summary>
         <Description xml:lang="en">Scripts for Debian package maintainers
 </Description>
-        <PartOf>programming.devel</PartOf>
-        <RuntimeDependencies>
-            <Dependency>dpkg</Dependency>
-            <Dependency>perl-uri</Dependency>
-            <Dependency>libwww-perl</Dependency>
-            <Dependency>perl-http-message</Dependency>
-            <Dependency>perl-http-date</Dependency>
-            <Dependency>perl-encode-locale</Dependency>
-            <Dependency>perl-timedate</Dependency>
-            <Dependency>perl-file-desktopentry</Dependency>
-            <Dependency>python-setuptools</Dependency>
-        </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib/perl5</Path>
-            <Path fileType="library">/usr/lib/python3.5</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/bash-completion</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.17.12-py3.6.egg-info/PKG-INFO</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.17.12-py3.6.egg-info/SOURCES.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.17.12-py3.6.egg-info/dependency_links.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.17.12-py3.6.egg-info/top_level.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/control.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/logger.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/test/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/test/test_help.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/test/test_logger.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/test/test_pylint.py</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Compression.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/DB_File_Lock.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Debbugs.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/PackageDeps.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Packages.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Set.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Versort.pm</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/bts</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/build-rdeps</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/chdist</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/checkbashisms</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/dch</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/dcontrol</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/dd-list</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/debc</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/debchange</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/debcheckout</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/debdiff</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/debi</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/debsign</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/debsnap</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/debuild</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/dget</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/dscextract</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/dscverify</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/getbuildlog</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/grep-excuses</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/list-unreleased</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/mass-bug</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/mk-build-deps</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/mk-origtargz</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/pkgnames</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/plotchangelog</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/pts-subscribe</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/pts-unsubscribe</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/rc-alert</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/rmadison</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/transition-check</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/uscan</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/uupdate</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/what-patch</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/who-uploads</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/whodepends</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/wnpp-alert</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/wnpp-check</Path>
             <Path fileType="data">/usr/share/devscripts</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2016-02-03</Date>
-            <Version>2.15.10</Version>
+        <Update release="4">
+            <Date>2018-02-01</Date>
+            <Version>2.17.12</Version>
             <Comment>Packaging update</Comment>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
