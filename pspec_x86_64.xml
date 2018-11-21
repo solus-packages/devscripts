@@ -5,7 +5,7 @@
             <Name>Pierre-Yves</Name>
             <Email>pyu@riseup.net</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPL-2.0-or-later</License>
         <Summary xml:lang="en">Scripts for Debian package maintainers</Summary>
         <Description xml:lang="en">Scripts for Debian package maintainers
 </Description>
@@ -17,25 +17,115 @@
         <Description xml:lang="en">Scripts for Debian package maintainers
 </Description>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.17.12-py3.6.egg-info/PKG-INFO</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.17.12-py3.6.egg-info/SOURCES.txt</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.17.12-py3.6.egg-info/dependency_links.txt</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.17.12-py3.6.egg-info/top_level.txt</Path>
+            <Path fileType="executable">/usr/bin/add-patch</Path>
+            <Path fileType="executable">/usr/bin/annotate-output</Path>
+            <Path fileType="executable">/usr/bin/archpath</Path>
+            <Path fileType="executable">/usr/bin/bts</Path>
+            <Path fileType="executable">/usr/bin/build-rdeps</Path>
+            <Path fileType="executable">/usr/bin/chdist</Path>
+            <Path fileType="executable">/usr/bin/checkbashisms</Path>
+            <Path fileType="executable">/usr/bin/cowpoke</Path>
+            <Path fileType="executable">/usr/bin/cvs-debi</Path>
+            <Path fileType="executable">/usr/bin/cvs-debrelease</Path>
+            <Path fileType="executable">/usr/bin/cvs-debuild</Path>
+            <Path fileType="executable">/usr/bin/dcmd</Path>
+            <Path fileType="executable">/usr/bin/dcontrol</Path>
+            <Path fileType="executable">/usr/bin/dd-list</Path>
+            <Path fileType="executable">/usr/bin/deb-reversion</Path>
+            <Path fileType="executable">/usr/bin/debc</Path>
+            <Path fileType="executable">/usr/bin/debchange</Path>
+            <Path fileType="executable">/usr/bin/debcheckout</Path>
+            <Path fileType="executable">/usr/bin/debclean</Path>
+            <Path fileType="executable">/usr/bin/debcommit</Path>
+            <Path fileType="executable">/usr/bin/debdiff</Path>
+            <Path fileType="executable">/usr/bin/debdiff-apply</Path>
+            <Path fileType="executable">/usr/bin/debi</Path>
+            <Path fileType="executable">/usr/bin/debpkg</Path>
+            <Path fileType="executable">/usr/bin/debrelease</Path>
+            <Path fileType="executable">/usr/bin/debrepro</Path>
+            <Path fileType="executable">/usr/bin/debrsign</Path>
+            <Path fileType="executable">/usr/bin/debsign</Path>
+            <Path fileType="executable">/usr/bin/debsnap</Path>
+            <Path fileType="executable">/usr/bin/debuild</Path>
+            <Path fileType="executable">/usr/bin/dep3changelog</Path>
+            <Path fileType="executable">/usr/bin/desktop2menu</Path>
+            <Path fileType="executable">/usr/bin/dget</Path>
+            <Path fileType="executable">/usr/bin/diff2patches</Path>
+            <Path fileType="executable">/usr/bin/dpkg-depcheck</Path>
+            <Path fileType="executable">/usr/bin/dpkg-genbuilddeps</Path>
+            <Path fileType="executable">/usr/bin/dscextract</Path>
+            <Path fileType="executable">/usr/bin/dscverify</Path>
+            <Path fileType="executable">/usr/bin/edit-patch</Path>
+            <Path fileType="executable">/usr/bin/getbuildlog</Path>
+            <Path fileType="executable">/usr/bin/git-deborig</Path>
+            <Path fileType="executable">/usr/bin/grep-excuses</Path>
+            <Path fileType="executable">/usr/bin/hardening-check</Path>
+            <Path fileType="executable">/usr/bin/list-unreleased</Path>
+            <Path fileType="executable">/usr/bin/ltnu</Path>
+            <Path fileType="executable">/usr/bin/manpage-alert</Path>
+            <Path fileType="executable">/usr/bin/mass-bug</Path>
+            <Path fileType="executable">/usr/bin/mergechanges</Path>
+            <Path fileType="executable">/usr/bin/mk-build-deps</Path>
+            <Path fileType="executable">/usr/bin/mk-origtargz</Path>
+            <Path fileType="executable">/usr/bin/namecheck</Path>
+            <Path fileType="executable">/usr/bin/nmudiff</Path>
+            <Path fileType="executable">/usr/bin/origtargz</Path>
+            <Path fileType="executable">/usr/bin/plotchangelog</Path>
+            <Path fileType="executable">/usr/bin/pts-subscribe</Path>
+            <Path fileType="executable">/usr/bin/rc-alert</Path>
+            <Path fileType="executable">/usr/bin/reproducible-check</Path>
+            <Path fileType="executable">/usr/bin/rmadison</Path>
+            <Path fileType="executable">/usr/bin/sadt</Path>
+            <Path fileType="executable">/usr/bin/suspicious-source</Path>
+            <Path fileType="executable">/usr/bin/svnpath</Path>
+            <Path fileType="executable">/usr/bin/tagpending</Path>
+            <Path fileType="executable">/usr/bin/transition-check</Path>
+            <Path fileType="executable">/usr/bin/uscan</Path>
+            <Path fileType="executable">/usr/bin/uupdate</Path>
+            <Path fileType="executable">/usr/bin/what-patch</Path>
+            <Path fileType="executable">/usr/bin/who-permits-upload</Path>
+            <Path fileType="executable">/usr/bin/who-uploads</Path>
+            <Path fileType="executable">/usr/bin/whodepends</Path>
+            <Path fileType="executable">/usr/bin/wnpp-alert</Path>
+            <Path fileType="executable">/usr/bin/wnpp-check</Path>
+            <Path fileType="executable">/usr/bin/wrap-and-sort</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.18.9-py3.6.egg-info/PKG-INFO</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.18.9-py3.6.egg-info/SOURCES.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.18.9-py3.6.egg-info/dependency_links.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts-2.18.9-py3.6.egg-info/top_level.txt</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/__init__.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/control.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/logger.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/test/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/test/test_flake8.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/test/test_help.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/test/test_logger.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/devscripts/test/test_pylint.py</Path>
-            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Compression.pm</Path>
-            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/DB_File_Lock.pm</Path>
-            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Debbugs.pm</Path>
-            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/PackageDeps.pm</Path>
-            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Packages.pm</Path>
-            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Set.pm</Path>
-            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Devscripts/Versort.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Compression.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Config.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/DB_File_Lock.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Debbugs.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/MkOrigtargz.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/MkOrigtargz/Config.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Output.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/PackageDeps.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Packages.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Set.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/CatchRedirections.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/Config.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/Downloader.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/FindFiles.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/Keyring.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/Output.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/Utils.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/WatchFile.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/WatchLine.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/_xtp.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/ftp.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/git.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Uscan/http.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Utils.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Devscripts/Versort.pm</Path>
             <Path fileType="data">/usr/share/bash-completion/completions/bts</Path>
             <Path fileType="data">/usr/share/bash-completion/completions/build-rdeps</Path>
             <Path fileType="data">/usr/share/bash-completion/completions/chdist</Path>
@@ -74,15 +164,23 @@
             <Path fileType="data">/usr/share/bash-completion/completions/whodepends</Path>
             <Path fileType="data">/usr/share/bash-completion/completions/wnpp-alert</Path>
             <Path fileType="data">/usr/share/bash-completion/completions/wnpp-check</Path>
-            <Path fileType="data">/usr/share/devscripts</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/devscripts/conf.default</Path>
+            <Path fileType="data">/usr/share/devscripts/debpkg</Path>
+            <Path fileType="data">/usr/share/devscripts/templates/README.mk-build-deps</Path>
+            <Path fileType="doc">/usr/share/doc/devscripts/README</Path>
+            <Path fileType="man">/usr/share/man/man1/add-patch.1</Path>
+            <Path fileType="man">/usr/share/man/man1/devscripts.1</Path>
+            <Path fileType="man">/usr/share/man/man1/edit-patch.1</Path>
+            <Path fileType="man">/usr/share/man/man1/suspicious-source.1</Path>
+            <Path fileType="man">/usr/share/man/man1/what-patch.1</Path>
+            <Path fileType="man">/usr/share/man/man1/wrap-and-sort.1</Path>
+            <Path fileType="man">/usr/share/man/man5/devscripts.conf.5</Path>
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-02-01</Date>
-            <Version>2.17.12</Version>
+        <Update release="5">
+            <Date>2018-11-21</Date>
+            <Version>2.18.9</Version>
             <Comment>Packaging update</Comment>
             <Name>Pierre-Yves</Name>
             <Email>pyu@riseup.net</Email>

@@ -1,9 +1,9 @@
 name       : devscripts
-version    : 2.17.12
-release    : 4
+version    : 2.18.9
+release    : 5
 source     :
-    - http://ftp.debian.org/debian/pool/main/d/devscripts/devscripts_2.17.12.tar.xz : 08286f97e467d1fc69dee3441da1421f4655eb407b8f95703b70662f73142af2
-license    : GPL-2.0
+    - https://salsa.debian.org/debian/devscripts/-/archive/v2.18.9/devscripts-v2.18.9.tar.bz2 : 37dfb10eca62a69f7a9be8c710044d0d7377b2a8f4a52370e4d67bdb6ef5c3e0
+license    : GPL-2.0-or-later
 summary    : Scripts for Debian package maintainers
 description: |
     Scripts for Debian package maintainers
